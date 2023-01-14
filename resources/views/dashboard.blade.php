@@ -48,9 +48,9 @@
 
 
             <select name="category">
-                <option value="1">Phone</option>
-                <option value="2">Tablette</option>
-                <option value="3">Laptop</option>
+                <option value="Phone">Phone</option>
+                <option value="Tablette">Tablette</option>
+                <option value="Laptop">Laptop</option>
             </select>
         </div>
 

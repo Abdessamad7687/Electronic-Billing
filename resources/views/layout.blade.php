@@ -21,7 +21,7 @@
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
 
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 gap-5">
-                        <li><a href="#" class="nav-link px-2 text-info active">
+                        <li><a href="{{ url('/') }}" class="nav-link px-2 text-info active">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
@@ -64,7 +64,7 @@
 
         <!-- header end -->
 
-        
+
     @yield('content')
     
     <script src="{{ asset('/assets/js/main.js') }}"></script>

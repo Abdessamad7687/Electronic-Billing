@@ -63,3 +63,6 @@ textarea:focus{
 .white{
     background-color: aliceblue !important;
 }
+.card{
+    border: solid 1px #107df2 !important;
+}
