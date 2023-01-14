@@ -13,10 +13,10 @@ let create = document.getElementById('create')
 create.addEventListener('click', function(){
     alert.classList.add('alert-flex')
 })
-let close = document.getElementById('close')
-close.addEventListener('click', function(){
-    alert.classList.remove('alert-flex')
-})
+// let close = document.getElementById('close')
+// close.addEventListener('click', function(){
+//     alert.classList.remove('alert-flex')
+// })
 
 
 

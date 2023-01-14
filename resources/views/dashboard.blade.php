@@ -53,19 +53,17 @@
         <!-- header end -->
 
         <!-- alert when product is added successfylly -->
-        @if(Session::has('message'))
+        @if(Session()->has('message'))
         <div class="alert alert-primary d-flex justify-content-between" role="alert">
-            <span class="text-left text-info">{{ Session::get('message') }}</span>
+            <span class="text-left text-info">{{ Session()->get('message') }}</span>
             <button type="button" class="close text-info" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true" id="close">&times;</span>
             </button>
         </div>
         @endif
 
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         @csrf
-
-        <!-- Product Name  -->
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -74,8 +72,11 @@
                         d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
                 </svg>
             </span>
-            <input type="text" class="form-control" placeholder="Product Name" aria-label="Username" id="product_name" name="name"
-                aria-describedby="basic-addon1">
+
+                    <!-- Product Name  -->
+
+            <input type="text" class="form-control" placeholder="Product Name" aria-label="Username" id="product_name" name="name">
+
             <span class="input-group-text" id="basic-addon1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-phone-vibrate" viewBox="0 0 16 16">
@@ -98,6 +99,9 @@
             </select>
         </div>
 
+        @error('name')
+                <span class="text-danger my-2">{{$message}}</span>
+        @enderror
 
 
         <div class="input-group mb-3 net">
@@ -110,6 +114,10 @@
              <!-- Product Quantity  -->
             <input type="number" name="quantity" id="quantity" class="form-control" value="1" placeholder="Quantity">
         </div>
+
+        @error('price')
+                <span class="text-danger my-2">{{$message}}</span>
+        @enderror
 
 
         <!-- Product Storage  -->
@@ -131,6 +139,9 @@
             <input type="text" class="form-control" name="color" placeholder="black" aria-label="Server">
         </div>
 
+        @error('storage')
+                <span class="text-danger my-2">{{$message}}</span>
+        @enderror
 
 
         <!-- Calculating the total -->
@@ -139,12 +150,12 @@
             <span class="input-group-text">
                 Total
             </span>
-            <input type="number" id="total" class="form-control" readonly="true">
+            <input type="number" id="total" name="total" class="form-control" readonly="true">
         </div>
 
         <!-- Submit Button   -->
         <div class="input-group">
-            <button type="button" id="create" class="btn btn-info w-100 mt-3">
+            <button type="submit" id="create" class="btn btn-info w-100 mt-3">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-box-arrow-right" viewBox="0 0 16 16">
