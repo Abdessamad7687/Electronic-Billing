@@ -26,13 +26,17 @@ close.addEventListener('click', function(){
     */
 let price = document.getElementById('price')
 
+let total 
+let quantity = document.getElementById('quantity')
 
 
-price.addEventListener('click', function(){
-    alert('coucou')
-    // let quantity = document.getElementById('quantity')
-    // let total = document.getElementById('total')
-    // let sum = parseFloat(price.value) *  parseFloat(quantity.value)
-    // total.innerHTML = sum
+document.querySelectorAll('.net input').forEach((item) => {
+    item.addEventListener('keyup', function(){
+        let sum = 0
+        console.log(parseFloat(price.value) *  parseFloat(quantity.value))
+        sum = parseFloat(price.value) *  parseFloat(quantity.value)
+        document.getElementById('total').value = sum
+    })
 })
+
    

@@ -96,7 +96,7 @@
 
         
 
-        <div class="input-group mb-3">
+        <div class="input-group mb-3 net">
             <!-- Product Price  -->
             <span class="input-group-text">Product Price $</span>
             <input type="number" name="price" id="price" class="form-control">
@@ -135,7 +135,7 @@
             <span class="input-group-text">
                 Total
             </span>
-            <input type="text" id="total" class="form-control" readonly="true">
+            <input type="number" id="total" class="form-control" readonly="true">
         </div>
 
         <!-- Submit Button   -->
