@@ -3,6 +3,7 @@
 
 <div class="container"> 
     <div class="row gap-5">
+        <h2 class="text-center">Listing All Products</h2>
         @foreach($Products as $product)
             <div class="card" style="width: 18rem;">
                 <div class="card-body">

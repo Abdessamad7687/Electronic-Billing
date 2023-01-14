@@ -27,7 +27,11 @@
             <td>{{ $product->total }}$</td>
             <td>{{ $product->storage }}</td>
             <td>{{ $product->color }}</td>
-            <td>Otto</td>
+            <td>
+                <a class="btn btn-primary">
+                    Signle View
+                </a>
+            </td>
         </tr>
     @endforeach
     </tbody>
