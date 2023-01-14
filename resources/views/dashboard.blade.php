@@ -3,6 +3,7 @@
 
 <div class="container p-4 my-2">
         <!-- header start -->
+
         <header class="p-3 text text mb-3">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -49,6 +50,9 @@
             </div>
         </header>
 
+        <!-- header end -->
+
+        <!-- alert when product is added successfylly -->
 
         <div class="alert alert-primary d-flex justify-content-between" role="alert">
             <span class="text-left text-info">Product Added Successfully</span>
@@ -57,7 +61,7 @@
             </button>
         </div>
 
-        <!-- header end -->
+        <!-- Product Name  -->
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -66,7 +70,7 @@
                         d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
                 </svg>
             </span>
-            <input type="text" class="form-control" placeholder="Product Name" aria-label="Username"
+            <input type="text" class="form-control" placeholder="Product Name" aria-label="Username" name="name"
                 aria-describedby="basic-addon1">
             <span class="input-group-text" id="basic-addon1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -83,26 +87,28 @@
             <!-- Category -->
 
 
-            <select>
+            <select name="category">
                 <option value="1">Phone</option>
                 <option value="2">Tablette</option>
                 <option value="3">Laptop</option>
             </select>
         </div>
 
-
+        
 
         <div class="input-group mb-3">
+            <!-- Product Price  -->
             <span class="input-group-text">Product Price $</span>
-            <input type="number" class="form-control">
+            <input type="number" name="price" class="form-control">
             <span class="input-group-text">
                 Quantity
             </span>
-            <input type="number" class="form-control" value="1" placeholder="Quantity">
+             <!-- Product Quantity  -->
+            <input type="number" name="quantity" class="form-control" value="1" placeholder="Quantity">
         </div>
 
 
-
+        <!-- Product Storage  -->
 
         <div class="input-group mb-3">
             <span class="input-group-text">
@@ -114,9 +120,11 @@
                         d="M5.914 0H12.5A1.5 1.5 0 0 1 14 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5V3.914c0-.398.158-.78.44-1.06L4.853.439A1.5 1.5 0 0 1 5.914 0zM13 1.5a.5.5 0 0 0-.5-.5H5.914a.5.5 0 0 0-.353.146L3.146 3.561A.5.5 0 0 0 3 3.914V14.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-13z" />
                 </svg>
             </span>
-            <input type="text" class="form-control" placeholder="128GB" aria-label="Username">
+            <input type="text" class="form-control" placeholder="128GB" name="storage" aria-label="Username">
             <span class="input-group-text">Color</span>
-            <input type="text" class="form-control" placeholder="black" aria-label="Server">
+
+            <!-- Product Color -->
+            <input type="text" class="form-control" name="color" placeholder="black" aria-label="Server">
         </div>
 
 
@@ -130,6 +138,7 @@
             <input type="text" id="total" class="form-control" readonly="true" aria-label="Server">
         </div>
 
+        <!-- Submit Button   -->
         <div class="input-group">
             <button type="button" id="create" class="btn btn-info w-100 mt-3">
                 <span>
