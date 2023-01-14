@@ -66,3 +66,6 @@ textarea:focus{
 .card{
     border: solid 1px #107df2 !important;
 }
+.card-text {
+    color: #107df2 !important   ;
+}
