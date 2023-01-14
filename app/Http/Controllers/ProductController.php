@@ -79,6 +79,11 @@ class ProductController extends Controller
      */
 
 
+     public function table() {
+        $Products = Product::all();
+        return view('table', compact('Products'));
+     }
+
 
 
     public function show($id)

@@ -6,19 +6,30 @@
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+            <th scope="col">Storage</th>
+            <th scope="col">Color</th>
+            <th scope="col">Actions</th>
         </tr>
     </thead>
     <tbody>
+    @foreach($Products as $product)
         <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+            <th scope="row">{{ $product->id }}</th>
+            <td>{{ $product->name }}</td>
+            <td>{{ $product->category }}</td>
+            <td>{{ $product->price }}$</td>
+            <td>{{ $product->quantity }}</td>
+            <td>{{ $product->total }}$</td>
+            <td>{{ $product->storage }}</td>
+            <td>{{ $product->color }}</td>
             <td>Otto</td>
-            <td>@mdo</td>
         </tr>
-       
+    @endforeach
     </tbody>
     </table>
 </div>

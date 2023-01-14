@@ -40,7 +40,7 @@
                                     </svg>
                                 </span>
                                 List-Products</a></li>
-                        <li><a href="#" class="nav-link px-2 text-info">
+                        <li><a href="{{ route('table') }}" class="nav-link px-2 text-info">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-file-spreadsheet-fill" viewBox="0 0 16 16">

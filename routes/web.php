@@ -7,3 +7,4 @@ use App\Http\Controllers\ProductController;
 Route::get('/', [ProductController::class, 'create']);
 Route::post('/', [ProductController::class, 'store']);
 Route::get('/list', [ProductController::class, 'list'])->name('list');
+Route::get('/table', [ProductController::class, 'table'])->name('table');
