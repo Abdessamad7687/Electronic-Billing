@@ -70,7 +70,7 @@
                         d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
                 </svg>
             </span>
-            <input type="text" class="form-control" placeholder="Product Name" aria-label="Username" name="name"
+            <input type="text" class="form-control" placeholder="Product Name" aria-label="Username" id="product_name" name="name"
                 aria-describedby="basic-addon1">
             <span class="input-group-text" id="basic-addon1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -99,12 +99,12 @@
         <div class="input-group mb-3">
             <!-- Product Price  -->
             <span class="input-group-text">Product Price $</span>
-            <input type="number" name="price" class="form-control">
+            <input type="number" name="price" id="price" class="form-control">
             <span class="input-group-text">
                 Quantity
             </span>
              <!-- Product Quantity  -->
-            <input type="number" name="quantity" class="form-control" value="1" placeholder="Quantity">
+            <input type="number" name="quantity" id="quantity" class="form-control" value="1" placeholder="Quantity">
         </div>
 
 
@@ -135,7 +135,7 @@
             <span class="input-group-text">
                 Total
             </span>
-            <input type="text" id="total" class="form-control" readonly="true" aria-label="Server">
+            <input type="text" id="total" class="form-control" readonly="true">
         </div>
 
         <!-- Submit Button   -->

@@ -18,8 +18,21 @@ close.addEventListener('click', function(){
     alert.classList.remove('alert-flex')
 })
 
-let mode = document.querySelector('.mode')
-mode.addEventListener('click', () => {
-    console.log(mode)
-    document.getElementsByTagName('body').classList.add('white')
+
+
+    /*
+     * Calculating the total price of the product
+     *
+    */
+let price = document.getElementById('price')
+
+
+
+price.addEventListener('click', function(){
+    alert('coucou')
+    // let quantity = document.getElementById('quantity')
+    // let total = document.getElementById('total')
+    // let sum = parseFloat(price.value) *  parseFloat(quantity.value)
+    // total.innerHTML = sum
 })
+   
