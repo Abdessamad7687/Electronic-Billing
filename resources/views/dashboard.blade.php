@@ -7,7 +7,7 @@
         <header class="p-3 text text mb-3">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    
+
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 gap-5">
                         <li><a href="#" class="nav-link px-2 text-info active">
                                 <span>
@@ -18,7 +18,7 @@
                                     </svg>
                                 </span>
                                 Add-Product</a></li>
-                                
+
                         <li><a href="#" class="nav-link px-2 text-info">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -46,20 +46,24 @@
                         </select>
                     </div>
                 </div>
-                
+
             </div>
         </header>
 
         <!-- header end -->
 
         <!-- alert when product is added successfylly -->
-
+        @if(Session::has('message'))
         <div class="alert alert-primary d-flex justify-content-between" role="alert">
-            <span class="text-left text-info">Product Added Successfully</span>
+            <span class="text-left text-info">{{ Session::get('message') }}</span>
             <button type="button" class="close text-info" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true" id="close">&times;</span>
             </button>
         </div>
+        @endif
+
+    <form method="post">
+        @csrf
 
         <!-- Product Name  -->
         <div class="input-group mb-3">
@@ -94,7 +98,7 @@
             </select>
         </div>
 
-        
+
 
         <div class="input-group mb-3 net">
             <!-- Product Price  -->
@@ -152,6 +156,7 @@
                 </span>
                 Add Product</button>
         </div>
+    </form>
     </div>
 
 @endsection
