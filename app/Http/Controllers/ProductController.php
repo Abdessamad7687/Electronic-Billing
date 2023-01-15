@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App;
 
 class ProductController extends Controller
 {
@@ -123,12 +124,11 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     
+
     public function change(Request $request)
     {
         App::setLocale($request->lang);
         session()->put('locale', $request->lang);
-  
         return redirect()->back();
     }
 

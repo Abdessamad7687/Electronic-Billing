@@ -52,14 +52,11 @@
                     </ul>
 
                     <div class="col-md-3">
-                        <select>
-                            <!-- <option value="1">English</option>
-                            <option value="2">French</option> -->
-
-                            <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-
-                            <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>French</option>
-                        </select>
+                    <select class="form-control changeLang">
+                    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+                    <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>French</option>
+                    
+                </select>
                     </div>
                 </div>
 
@@ -70,7 +67,7 @@
 
 
     @yield('content')
-    
+
     <script type="text/javascript">
   
     var url = "{{ route('changeLang') }}";

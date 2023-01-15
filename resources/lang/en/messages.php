@@ -2,6 +2,5 @@
   
 return [
   
-    'title' => 'This is English Language Title.',
-  
+    'title' => 'Add-Product',
 ];
