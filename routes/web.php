@@ -6,6 +6,7 @@ use App\Http\Controllers\LangController;
 
 
 Route::get('/', [ProductController::class, 'create']);
+Route::get('/change', [ProductController::class, 'change']);
 Route::post('/', [ProductController::class, 'store']);
 Route::get('/list', [ProductController::class, 'list'])->name('list');
 Route::get('/table', [ProductController::class, 'table'])->name('table');
