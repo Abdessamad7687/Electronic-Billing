@@ -2,6 +2,16 @@
 @section('content')
 
 <div class="container table">
+    <h2 class="text-center my-2">All Products</h2>
+
+    <select class="form-select my-2">
+        <option selected>Sort By</option>
+        <option value="1">Latest</option>
+        <option value="2">Today</option>
+        <option value="3">This week</option>
+        <option value="3">This month</option>
+    </select>
+
     <table class="table table-hover">
     <thead>
         <tr>
@@ -24,7 +34,7 @@
             <td>{{ $product->category }}</td>
             <td>{{ $product->price }}$</td>
             <td>{{ $product->quantity }}</td>
-            <td>{{ $product->total }}$</td>
+            <td class="text-success">{{ $product->total }}$</td>
             <td>{{ $product->storage }}</td>
             <td>{{ $product->color }}</td>
             <td>
