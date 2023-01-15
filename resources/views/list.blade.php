@@ -3,7 +3,12 @@
 
 <div class="container"> 
     <div class="row gap-5">
-        <h2 class="text-center">Listing All Products</h2>
+        <select class="form-select my-2">
+        <option value="1">Latest</option>
+        <option value="2">Today</option>
+        <option value="3">This week</option>
+        <option value="3">This month</option>
+    </select>
         @foreach($Products as $product)
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
@@ -25,6 +30,11 @@
         @endforeach
     </div>
 </div>
+<footer id="sticky-footer" class="flex-shrink-0 py-4 text-white-50">
+    <div class="container text-center">
+      <small> &copy; Electronic-Billings</small>
+    </div>
+  </footer>
 
 
 @endsection
