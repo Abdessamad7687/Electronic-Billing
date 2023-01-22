@@ -28,5 +28,23 @@ composer update
 ```bash
 composer install
 ```
+<p> create new file .env  </p>
+<br>
+<p> copy .env.example in .env </p>
+<br>
+<p> Create database laravel </p>
+<br>
+```bash
+php artisan migrate
+```
 
+<br>
+```bash
+php artisan key:generate
+```
+<br>
+```bash
+php artisan serve
+```
+http://127.0.0.1:8000/
 
