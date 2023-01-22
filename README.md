@@ -33,18 +33,23 @@ composer install
 <p> copy .env.example in .env </p>
 <br>
 <p> Create database laravel </p>
-<br>
+
+
 ```bash
 php artisan migrate
 ```
 
-<br>
+
 ```bash
 php artisan key:generate
 ```
-<br>
+
 ```bash
 php artisan serve
 ```
+
+```bash
 http://127.0.0.1:8000/
+```
+
 
