@@ -12,3 +12,21 @@
 
 
 
+```bash
+git clone https://github.com/Abdessamad7687/Electronic-Billing
+```
+
+
+```bash
+cd Electronic-Billing
+```
+
+```bash
+composer update
+```
+
+```bash
+composer install
+```
+
+
