@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App;
+use PDF;
 
 class ProductController extends Controller
 {
@@ -16,7 +17,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        
+        $Products = Product::all();
+        $pdf = PDF::loadView('list', compact('Products'));
+        return $pdf->download('list.pdf');
     }
 
     /**
