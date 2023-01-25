@@ -10,26 +10,46 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<p>
-Copyright (c) 2022-2023 Ahmali Abdessamad
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+```bash
+git clone https://github.com/Abdessamad7687/Electronic-Billing
+```
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</p>
+
+```bash
+cd Electronic-Billing
+```
+
+```bash
+composer update
+```
+
+```bash
+composer install
+```
+<p> create new file .env  </p>
+<br>
+<p> copy .env.example in .env </p>
+<br>
+<p> Create database laravel </p>
+
+
+```bash
+php artisan migrate
+```
+
+
+```bash
+php artisan key:generate
+```
+
+```bash
+php artisan serve
+```
+
+```bash
+http://127.0.0.1:8000/
+```
+
 
