@@ -7,6 +7,10 @@ inputs.forEach(input => {
     })
 }) 
 
+
+
+
+
 let alert = document.querySelector('.alert')
 
 let create = document.getElementById('create')

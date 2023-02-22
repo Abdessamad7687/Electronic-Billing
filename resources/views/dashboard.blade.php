@@ -6,12 +6,6 @@
 
         <!-- alert when product is added successfylly -->
         @if(Session()->has('message'))
-        <!-- <div class="alert alert-primary d-flex justify-content-between" role="alert">
-            <span class="text-left text-info">{{ Session()->get('message') }}</span>
-            <button type="button" class="close text-info" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true" id="close">&times;</span>
-            </button>
-        </div> -->
             <div class="alert alert-primary" role="alert">
                 {{ Session()->get('message') }}
             </div>
