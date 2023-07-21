@@ -11,7 +11,7 @@
 <body>
     <div class="container">
   
-        <h1>How to Create Multi Language Website in Laravel - ItSolutionStuff.com</h1>
+        <h1></h1>
   
         <div class="row">
             <div class="col-md-2 col-md-offset-6 text-right">
