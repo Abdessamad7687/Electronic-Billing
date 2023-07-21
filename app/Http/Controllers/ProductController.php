@@ -17,7 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $Products = Product::all();
+        $Products = Product::paginate(20);
         $pdf = PDF::loadView('list', compact('Products'));
         return $pdf->download('list.pdf');
     }
@@ -48,15 +48,8 @@ class ProductController extends Controller
             'storage' => 'required',
             'color' => 'required'
         ]);
-        $product = new Product();
-        $product->name = $request->name;
-        $product->category = $request->category;
-        $product->price = $request->price;
-        $product->quantity = $request->quantity;
-        $product->storage = $request->storage;
-        $product->color = $request->color;
-        $product->total = $request->total;
-        $product->save();
+
+        Product::create($request->all());
         return back()->with('message', 'Product Added Successfully');
     }
 
