@@ -40,6 +40,14 @@
                 <a class="btn btn-primary">
                     Signle View
                 </a>
+
+                <a class="btn btn-warning">
+                    Edit
+                </a>
+
+                <a class="btn btn-danger">
+                    Delete
+                </a>
             </td>
         </tr>
     @endforeach
