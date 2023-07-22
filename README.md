@@ -1,7 +1,7 @@
-<center><p> Laravel 9 </p></center>
 
 
 <img src="https://github.com/Abdessamad7687/Electronic-Billing/blob/main/public/assets/images/demo.jpg" width="800" alt="Product Logo">
+
 <img src="https://github.com/Abdessamad7687/Electronic-Billing/blob/main/public/assets/images/Cards.jpg" width="800" alt="Product Logo">
 
 <img src="https://github.com/Abdessamad7687/Electronic-Billing/blob/main/public/assets/images/table.jpg" width="800" alt="Product Logo">
