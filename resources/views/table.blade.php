@@ -18,6 +18,7 @@
             <th scope="col">Actions</th>
         </tr>
     </thead>
+
     <tbody>
     @foreach($Products as $product)
         <tr>
@@ -65,4 +66,4 @@
     </table>
 </div>
 
-@endsection
+@stop

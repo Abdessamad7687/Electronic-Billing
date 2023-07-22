@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\LangController;
     
 
 Route::get('/', [ProductController::class, 'create']);
@@ -17,6 +16,4 @@ Route::get('/product/{id}', [ProductController::class, 'show'])->name('products.
 Route::delete('/product/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
 
 
-// lang
-// Route::get('lang/home', [LangController::class, 'index']);
-// Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
+
