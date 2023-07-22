@@ -20,7 +20,6 @@
                     <p class="card-text">Storage: {{ $product->storage }} GB</p>
                     <p class="card-text">Color: {{ $product->color }}</p>
                     <p class="card-text">Total: {{ $product->total }}$</p>
-
                     <div class="d-flex gap-2">
 
                         <a href="{{ route('products.show', $product->id) }}" class="btn btn-primary">
@@ -57,6 +56,7 @@
         @endforeach
     </div>
 </div>
+
 <footer id="sticky-footer" class="flex-shrink-0 py-4 text-white-50">
     <div class="container text-center">
       <small> &copy; Electronic-Billings</small>

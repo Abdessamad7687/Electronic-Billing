@@ -17,7 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $Products = Product::paginate(20);
+        $Products = Product::all()->paginate(5);
         $pdf = PDF::loadView('list', compact('Products'));
         return $pdf->download('list.pdf');
     }
