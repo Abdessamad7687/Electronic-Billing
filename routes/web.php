@@ -12,6 +12,8 @@ Route::get('/list', [ProductController::class, 'list'])->name('list');
 Route::get('/table', [ProductController::class, 'table'])->name('table');
 Route::get('/pdf', [ProductController::class, 'index'])->name('pdf');
 
+Route::get('/product/{id}', [ProductController::class, 'show'])->name('products.show');
+
 // lang
 // Route::get('lang/home', [LangController::class, 'index']);
 // Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
