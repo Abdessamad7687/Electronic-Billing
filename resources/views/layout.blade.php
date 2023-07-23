@@ -69,15 +69,6 @@
 
     @yield('content')
 
-    <script type="text/javascript">
-  
-    var url = "{{ route('changeLang') }}";
-  
-    $(".changeLang").change(function(){
-        window.location.href = url + "?lang="+ $(this).val();
-    });
-  
-</script>
     <script src="{{ asset('/assets/js/main.js') }}"></script>
 </body>
 

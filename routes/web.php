@@ -5,15 +5,11 @@ use App\Http\Controllers\ProductController;
     
 
 Route::get('/', [ProductController::class, 'create']);
-Route::get('/change', [ProductController::class, 'change'])->name('changeLang');
 Route::post('/', [ProductController::class, 'store']);
 Route::get('/list', [ProductController::class, 'list'])->name('list');
 Route::get('/table', [ProductController::class, 'table'])->name('table');
-Route::get('/pdf', [ProductController::class, 'index'])->name('pdf');
-
-
 Route::get('/product/{id}', [ProductController::class, 'show'])->name('products.show');
-Route::delete('/product/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
-
-
+Route::get('/product/edit/{id}', [ProductController::class, 'edit'])->name('products.edit');
+Route::put('/product/edit/{id}', [ProductController::class, 'update'])->name('products.update');
+Route::delete('/product/delete/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
 

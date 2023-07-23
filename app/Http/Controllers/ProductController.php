@@ -97,7 +97,8 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = Product::find($id);
+        return view('edit', ['product' => $product]);
     }
 
     /**
@@ -109,7 +110,18 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $product = Product::find($id);
+        $request->validate([
+            'name' => 'required',
+            "category" => 'required',
+            'price' =>'required',
+            'quantity' =>'required',
+            'storage' => 'required',
+            'color' => 'required'
+        ]);
+
+        $product->update($request->all());
+        return redirect('/table');
     }
 
 
@@ -140,6 +152,6 @@ class ProductController extends Controller
     {
         $Product = Product::findOrFail($id);
         $Product->delete();
-        return redirect('/');
+        return redirect('/table');
     }
 }
