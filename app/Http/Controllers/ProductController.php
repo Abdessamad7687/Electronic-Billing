@@ -152,6 +152,6 @@ class ProductController extends Controller
     {
         $Product = Product::findOrFail($id);
         $Product->delete();
-        return redirect('/table');
+        return back();
     }
 }
