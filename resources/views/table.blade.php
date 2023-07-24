@@ -32,6 +32,7 @@
             <td>{{ $product->storage }}</td>
             <td>{{ $product->color }}</td>
             <td>
+                <div class="d-flex">
                 <a href="{{ route('products.show', $product->id) }}" class="btn btn-primary">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
@@ -60,7 +61,7 @@
                         </button>
                     </form>
                     
-                
+                </div>
             </td>
         </tr>
     @endforeach

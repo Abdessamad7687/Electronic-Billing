@@ -92,7 +92,7 @@
             <span class="input-group-text">
                 Total
             </span>
-            <input type="number" id="total"  name="total" class="form-control" readonly="true">
+            <input type="number" id="total" value="{{ $product->total }}"  name="total" class="form-control" readonly="true">
         </div>
 
         <!-- Submit Button   -->
