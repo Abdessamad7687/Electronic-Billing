@@ -24,21 +24,22 @@ cd Electronic-Billing
 ```bash
 composer install
 ```
-<p> create new file .env  </p>
+
 <br>
-<p> copy .env.example in .env </p>
+```bash
+cp .\.env.example .env
+```
 <br>
-<p> Create database  </p>
+
+```bash
+php artisan key:generate
+```
 
 
 ```bash
 php artisan migrate
 ```
 
-
-```bash
-php artisan key:generate
-```
 
 ```bash
 php artisan serve
