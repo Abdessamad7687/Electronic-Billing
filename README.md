@@ -22,14 +22,12 @@ cd Electronic-Billing
 
 
 ```bash
-composer install
+composer update
 ```
 
-<br>
 ```bash
 cp .\.env.example .env
 ```
-<br>
 
 ```bash
 php artisan key:generate
