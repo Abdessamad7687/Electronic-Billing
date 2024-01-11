@@ -17,9 +17,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $Products = Product::all()->paginate(5);
-        $pdf = PDF::loadView('list', compact('Products'));
-        return $pdf->download('list.pdf');
+        $Products = Product::all();
+        return view('pages.index', ['Products' => $Products]);
     }
 
     /**
@@ -29,7 +28,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('dashboard');
+        $Products = Product::get();
+        return view('pages.index', ['Products' => $Products]);
     }
 
     /**
